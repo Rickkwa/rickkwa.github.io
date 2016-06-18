@@ -2,11 +2,11 @@
 	{
 		"slug" : "picross",
 		"name" : "Picross",
-		"short_desc" : "",
-		"desc" : "",
+		"short_desc" : "Front end web application that lets you create your own Picross puzzle to print out or share with others.",
+		"desc" : "asd",
 		"thumbnail" : "",
 		"pictures" : [""],
-		"tags" : [""],
-		"source": ""
+		"tags" : ["JavaScript", "HTML", "CSS", "jQuery", "Backbone"],
+		"source": "https://github.com/Rickkwa/Picross"
 	}
 ]
