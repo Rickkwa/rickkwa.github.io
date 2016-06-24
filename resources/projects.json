@@ -5,8 +5,9 @@
 		"short_desc" : "Front end web application that lets you create your own Picross puzzle to print out or share with others.",
 		"desc" : "asd",
 		"thumbnail" : "",
-		"pictures" : [""],
+		"pictures" : [],
 		"tags" : ["JavaScript", "HTML", "CSS", "jQuery", "Backbone"],
-		"source": "https://github.com/Rickkwa/Picross"
+		"source": "https://github.com/Rickkwa/Picross",
+		"demo": "https://rickkwa.github.io/demo/picross"
 	}
 ]
