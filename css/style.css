@@ -54,6 +54,10 @@ footer {
 /* Skills */
 
 /* Projects List */
+.personal-projects {
+	margin-top: 150px;
+}
+
 .project-summary {
 	background-color: #ededed;
 	border-radius: 2px;

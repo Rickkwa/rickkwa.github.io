@@ -21,5 +21,16 @@
 		"tags" : ["HTML", "CSS", "JavaScript", "Chrome API", "jQuery", "Ajax"],
 		"source" : "https://github.com/Rickkwa/wanikani-highlighter",
 		"demo" : "https://chrome.google.com/webstore/detail/wanikani-highlighter/hombnkakdkackepmkogeoldikgigfeoh"
+	},
+
+	{
+		"slug" : "win8mal",
+		"name" : "Win8MAL",
+		"short_desc" : "A custom CSS theme for MyAnimeList. The theme was inspired by Windows 8; due to its metro tiles, and minimalistic design.",
+		"desc" : "",
+		"thumbnail" : null,
+		"pictures" : [],
+		"tags" : ["CSS"],
+		"source" : "https://github.com/Rickkwa/Win8MAL"
 	}
 ]

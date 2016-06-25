@@ -35,25 +35,27 @@
 			<div>Software Developer located in Toronto, Canada.</div>
 		</section>
 
-		<section class="row">
-			<div class="col-md-8 col-lg-8 col-sm-8 col-xs-12">
-				<h2 class="text-center">Who Am I?</h2>
-				<p>
-				My name is Ricky Kwan. I am <%= age %> years old and graduated from the University of Toronto in June 2016, specializing in software engineering. 
-				</p>
-			</div>
+		<section class="intro-and-contact">
+			<div class="row">
+				<div class="col-md-8 col-lg-8 col-sm-8 col-xs-12">
+					<h2 class="text-center">Who Am I?</h2>
+					<p>
+					My name is Ricky Kwan. I am <%= age %> years old and graduated from the University of Toronto in June 2016, specializing in software engineering. 
+					</p>
+				</div>
 
-			<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 text-center">
-				<h2 class="">Networking</h2>
-				<div>
-					<% contactInfos.each(function(ciModel) { %>
-						<a class="tile network-btn row" href="<%= ciModel.get('link') %>">
-							<div class="col-md-offset-4 col-md-1 col-sm-offset-3 col-sm-1 col-xs-offset-4 col-xs-1 text-right">
-								<i class="fa fa-<%= ciModel.get('fa_icon') %>"></i>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 text-left"> <%= ciModel.get('text') %></div>
-						</a>
-					<% }); %>
+				<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 text-center">
+					<h2 class="">Networking</h2>
+					<div>
+						<% contactInfos.each(function(ciModel) { %>
+							<a class="tile network-btn row" href="<%= ciModel.get('link') %>">
+								<div class="col-md-offset-4 col-md-1 col-sm-offset-3 col-sm-1 col-xs-offset-4 col-xs-1 text-right">
+									<i class="fa fa-<%= ciModel.get('fa_icon') %>"></i>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 text-left"> <%= ciModel.get('text') %></div>
+							</a>
+						<% }); %>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -61,7 +63,7 @@
 		<section>
 		</section>
 
-		<section>
+		<section class="personal-projects">
 			<h2 class="text-center">Personal Projects</h2>
 			<div class="project-summary-container"></div>
 		</section>
