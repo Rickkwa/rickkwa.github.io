@@ -4,7 +4,7 @@
 		"name" : "Picross",
 		"short_desc" : "A front end web application that lets you create your own Picross (aka nonogram) puzzle to print out or share with others.",
 		"desc" : "",
-		"thumbnail" : null,
+		"thumbnail" : "img/picross-thumbnail.png",
 		"pictures" : [],
 		"tags" : ["JavaScript", "HTML", "CSS", "jQuery", "Backbone"],
 		"source": "https://github.com/Rickkwa/Picross",
@@ -28,7 +28,7 @@
 		"name" : "Win8MAL",
 		"short_desc" : "A custom CSS theme for MyAnimeList. The theme was inspired by Windows 8; due to its metro tiles, and minimalistic design.",
 		"desc" : "",
-		"thumbnail" : null,
+		"thumbnail" : "img/win8mal-thumbnail.png",
 		"pictures" : [],
 		"tags" : ["CSS"],
 		"source" : "https://github.com/Rickkwa/Win8MAL"
