@@ -6,12 +6,24 @@ main {
 	font-size: 18px;
 }
 
+footer {
+	margin-top: 20px;
+}
+
+.img {
+	border-radius: 2px;
+}
+
 .tile {
 	border-radius: 2px;
 	/*background-color: #e5e5e5;*/
 	background-color: #ededed;
 	padding: 10px;
-	box-sizing: border-box;;
+	box-sizing: border-box;
+}
+
+.thumbnail {
+	border-radius: 2px;
 }
 
 /* Main Header */
@@ -38,3 +50,53 @@ main {
 /* Skills */
 
 /* Projects List */
+.project-summary {
+	background-color: #ededed;
+	border-radius: 2px;
+	height: 250px;
+	width: 100%;
+}
+
+.project-thumbnail, .project-content {
+	max-height: 250px;
+}
+
+.project-thumbnail {
+	
+}
+
+.project-thumbnail img {
+	max-width: 100%;
+	height: 250px;
+}
+
+.project-top {
+	height: 210px;
+	overflow-y: auto;
+	padding: 0px 10px;
+	border-bottom: 1px solid #cecece;
+	box-sizing: border-box;
+}
+
+.project-bot {
+	height: 40px;
+	position: relative;
+}
+
+.project-bot > div {
+	position: absolute;
+	bottom: 5px;
+}
+
+.project-bot .tag {
+	font-size: 0.8em;
+	background-color: #cecece;
+	border-radius: 3px;
+	margin: 2px;
+	padding: 2px 5px;
+	box-sizing: border-box;
+}
+
+.project-bot .links-container {
+	right: 2px;
+}
