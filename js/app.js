@@ -7,18 +7,17 @@ app.Router = Backbone.Router.extend({
 	},
 
 	initialize: function() {
-		this.loadProjects(function(coll, resp) {
-			// console.log(coll.at(0).toJSON());
-			// console.log(coll.get("picross").toJSON());
-		});
 	},
 
 	home: function() {
-		if (!this.homeView)
-			this.homeView = new app.HomeView({ el: $("#content") });
-		this.homeView.render(); // TODO: Pass el in constructor
-
-		
+		var self = this;
+		self.loadProjects(function(projectsColl) {
+			self.loadContactInformation(function(contactInfoColl) {
+				if (!self.homeView)
+					self.homeView = new app.HomeView({ el: $("#content"), projects: projectsColl, contactInfos: contactInfoColl });
+				self.homeView.render();
+			});
+		});
 	},
 
 	project: function(slug) {
@@ -33,10 +32,15 @@ app.Router = Backbone.Router.extend({
 
 	loadProjects: function(callback) {
 		// Load/Create the collection, then fetch
-		if (!this.projects) {
+		if (!this.projects)
 			this.projects = new app.Projects();
-		}
 		this.projects.fetch({ success: callback });
+	},
+
+	loadContactInformation: function(callback) {
+		if (!this.contactInfos)
+			this.contactInfos = new app.ContactInfos();
+		this.contactInfos.fetch({ success: callback });
 	}
 });
 

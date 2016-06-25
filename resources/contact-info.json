@@ -1,0 +1,25 @@
+[
+	{
+		"text" : "Email",
+		"link" : "mailto:rickyk.162+portfolio@gmail.com",
+		"fa_icon" : "envelope-o"
+	},
+
+	{
+		"text" : "LinkedIn",
+		"link" : "https://www.linkedin.com/in/rickkwa",
+		"fa_icon" : "linkedin"
+	},
+
+	{
+		"text" : "GitHub",
+		"link" : "https://github.com/Rickkwa",
+		"fa_icon" : "github"
+	},
+
+	{
+		"text" : "Resume",
+		"link" : "resources/resume.pdf",
+		"fa_icon" : "file-pdf-o"
+	}
+]
