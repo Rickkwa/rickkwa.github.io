@@ -9,5 +9,16 @@
 		"tags" : ["JavaScript", "HTML", "CSS", "jQuery", "Backbone"],
 		"source": "https://github.com/Rickkwa/Picross",
 		"demo": "https://rickkwa.github.io/demo/picross"
+	},
+
+	{
+		"slug" : "wk-highlighter",
+		"name" : "WaniKani Highlighter",
+		"short_desc" : "",
+		"desc" : "",
+		"thumbnail" : "",
+		"pictures" : [],
+		"tags" : [],
+		"source" : "https://github.com/Rickkwa/wanikani-highlighter"
 	}
 ]

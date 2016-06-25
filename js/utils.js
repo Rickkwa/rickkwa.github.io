@@ -9,5 +9,9 @@ app.utils = {
 			view.remove();
 			Backbone.View.prototype.remove.call(view);
 		}
+	},
+
+	getAge: function() {
+		return new Date(Date.now() - new Date("June 24, 1993")).getUTCFullYear() - 1970;
 	}
 };

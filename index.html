@@ -2,18 +2,20 @@
 <html>
 <head>
 	<title>Ricky Kwan</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 
 	<header>
-		<a href="mailto:rickyk.162+portfolio@gmail.com">Email</a>
+		<!--<a href="mailto:rickyk.162+portfolio@gmail.com">Email</a>
 		<a href="https://www.linkedin.com/in/rickkwa">LinkedIn</a>
 		<a href="resources/resume.pdf">Resume (PDF)</a>
-		<a href="https://github.com/Rickkwa">GitHub</a>
+		<a href="https://github.com/Rickkwa">GitHub</a>-->
 	</header>
 
-	<main></main>
+	<main class="container"><div id="content"></div></main>
 
 	<footer></footer>
 
@@ -31,20 +33,53 @@
 	</script>
 
 	<script type="text/template" id="home-template">
-		<section>
-			Software Developer located in Toronto, Ontario, Canada.
+		<section class="main-landing text-center">
+			<h1>Ricky Kwan</h1>
+			<div>Software Developer located in Toronto, Canada.</div>
 		</section>
+
+		<section class="row">
+			<div class="col-md-8 col-lg-8 col-sm-8 col-xs-12">
+				<h2 class="text-center">Who Am I?</h2>
+				<p>
+				My name is Ricky Kwan. I am <%= age %> years old and graduated from the University of Toronto in June 2016, specializing in software engineering. 
+				</p>
+			</div>
+
+			<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 text-center">
+				<h2 class="">Networking</h2>
+				<div>
+					<a class="tile network-btn row" href="mailto:rickyk.162+portfolio@gmail.com">
+						<div class="col-md-offset-4 col-md-1 text-right"><i class="fa fa-envelope-o"></i></div>
+						<div class="col-md-3"> Email</div>
+					</a>
+					<a class="tile network-btn row" href="https://www.linkedin.com/in/rickkwa">
+						<div class="col-md-offset-4 col-md-1 text-right"><i class="fa fa-linkedin"></i></div>
+						<div class="col-md-3"> LinkedIn</div>
+					</a>
+					<a class="tile network-btn row" href="https://github.com/Rickkwa">
+						<div class="col-md-offset-4 col-md-1 text-right"><i class="fa fa-github"></i></div>
+						<div class="col-md-3"> GitHub</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
 		<section>
-			<h3>Personal Projects</h3>
+		</section>
+
+		<section>
+			<!-- <h2>Personal Projects</h2> -->
 			<div class="project-summary-container">
 			</div>
 		</section>
 	</script>
 
 	<!-- Vendors -->
-	<script src="js/vendor/jquery-3.0.0.js"></script>
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="js/vendor/underscore.js"></script>
 	<script src="js/vendor/backbone.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
 
 	<!-- Models -->
 	<script src="js/models/project.js"></script>
@@ -53,6 +88,11 @@
 	<script src="js/collections/projects.js"></script>
 
 	<!-- Views -->
+	<script src="js/views/header.js"></script>
+	<script src="js/views/header-compact.js"></script>
+	<script src="js/views/home.js"></script>
+	<script src="js/views/project-summary.js"></script>
+	<script src="js/views/project.js"></script>
 
 	<!-- App -->
 	<script src="js/utils.js"></script>

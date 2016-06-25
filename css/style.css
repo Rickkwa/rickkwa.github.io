@@ -1,3 +1,40 @@
 body {
 	font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
 }
+
+main {
+	font-size: 18px;
+}
+
+.tile {
+	border-radius: 2px;
+	/*background-color: #e5e5e5;*/
+	background-color: #ededed;
+	padding: 5px;
+	box-sizing: border-box;;
+}
+
+/* Main Header */
+.main-landing {
+	margin: 100px 0;
+	font-size: 1.5em;
+}
+
+.main-landing h1 {
+	font-size: 3em;
+}
+
+/* Who am I? And Networking */
+.network-btn {
+	display: block;
+	color: inherit;
+	margin: 0 0 10px 0;
+}
+
+.network-btn:hover {
+	text-decoration: none;
+}
+
+/* Skills */
+
+/* Projects List */

@@ -7,19 +7,18 @@ app.Router = Backbone.Router.extend({
 	},
 
 	initialize: function() {
+		this.loadProjects(function(coll, resp) {
+			// console.log(coll.at(0).toJSON());
+			// console.log(coll.get("picross").toJSON());
+		});
 	},
 
 	home: function() {
-		if (!this.home) {
-			this.home = new app.Home();
-		}
-		// this.home.render(); // TODO: Pass el in constructor
+		if (!this.homeView)
+			this.homeView = new app.HomeView({ el: $("#content") });
+		this.homeView.render(); // TODO: Pass el in constructor
 
-		// "../resources/projects.json"
-		this.loadProjects(function(coll, resp) {
-			// console.log(coll.at(0).toJSON());
-			console.log(coll.get("picross").toJSON());
-		});
+		
 	},
 
 	project: function(slug) {
