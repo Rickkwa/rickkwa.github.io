@@ -20,6 +20,9 @@ app.HomeView = Backbone.View.extend({
 			$projectsContainer.append(summaryView.render().el);
 		});
 
+		// Bind scroll events to animate in
+		app.utils.bindAnimateIn();
+
 		return this;
 	}
 });
