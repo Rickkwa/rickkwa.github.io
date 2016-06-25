@@ -13,6 +13,14 @@ app.HomeView = Backbone.View.extend({
 			contactInfos: this.options.contactInfos
 		}));
 
+		// Populate project summaries
+		var $projectsContainer = $(".project-summary-container");
+		this.options.projects.each(function(pModel) {
+			console.log(pModel);
+			let summaryView = new app.ProjectSummaryView({ model: pModel });
+			$projectsContainer.append(summaryView.render().el);
+		});
+
 		return this;
 	}
 });

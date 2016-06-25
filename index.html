@@ -26,9 +26,6 @@
 	<script type="text/template" id="header-compact-template">
 	</script>
 
-	<script type="text/template" id="project-summary-template">
-	</script>
-
 	<script type="text/template" id="project-template">
 	</script>
 
@@ -66,46 +63,45 @@
 
 		<section>
 			<h2 class="text-center">Personal Projects</h2>
-			<div class="project-summary-container">
-				<div class="project-summary">
-					<div class="row">
-						<div class="project-thumbnail col-md-4 col-sm-4 col-lg-3 hidden-xs">
-							<img src="img/wkhighlighter-thumbnail.png" class="img-responsive"/>
-						</div>
-						<div class="project-content col-md-8 col-sm-8 col-lg-9 col-xs-12">
-							<div class="project-top">
-								<h3>WaniKani Highlighter</h3>
-								<p>Front end web application that lets you create your own Picross puzzle to print out or share with others. </p>
-								<p>Front end web application that lets you create your own Picross puzzle to print out or share with others. </p>
-								<p>Front end web application that lets you create your own Picross puzzle to print out or share with others. </p>
-								<p>Front end web application that lets you create your own Picross puzzle to print out or share with others. </p>
-								<p>Front end web application that lets you create your own Picross puzzle to print out or share with others. </p>
-								<p>Front end web application that lets you create your own Picross puzzle to print out or share with others. </p>
-								<p>Front end web application that lets you create your own Picross puzzle to print out or share with others. </p>
-								<p>Front end web application that lets you create your own Picross puzzle to print out or share with others. </p>
-							</div>
-							<div class="project-bot">
-								<div class="tags-list">
-									<div class="tag pull-left">HTML</div>
-									<div class="tag pull-left">JavaScript</div>
-									<div class="tag pull-left">JavaScript</div>
-									<div class="tag pull-left">JavaScript</div>
-									<div class="tag pull-left">JavaScript</div>
-									<div class="tag pull-left">JavaScript</div>
-									<div class="tag pull-left">JavaScript</div>
-									<div class="tag pull-left">JavaScript</div>
-									<div class="tag pull-left">CSS</div>
-								</div>
-								<div class="links-container">
-									<button>Demo</button>
-									<button>Source</button>
-								</div>
-							</div>
-						</div>
+			<div class="project-summary-container"></div>
+		</section>
+	</script>
+
+	<script type="text/template" id="project-summary-template">
+		<div class="project-summary">
+			<div class="row">
+				<div class="project-thumbnail col-md-3 col-lg-3 hidden-xs hidden-sm">
+					<img src="<%= thumbnail ? thumbnail : 'img/placeholder-thumbnail.png' %>" class="img-responsive"/>
+				</div>
+				<div class="col-md-9 col-lg-9 col-xs-12">
+					<div class="project-content">
+						<h3><%- name %></h3>
+						<p><%- short_desc %></p>
 					</div>
 				</div>
 			</div>
-		</section>
+			<div class="row">
+				<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+					<div class="links-container">
+						<% if (source) { %>
+						<a href="<%= source %>"><div class="tile inline-block">Source</div></a>
+						<% } else { %>
+						<div class="tile inline-block">Source Unavailable</div>
+						<% } %>
+						<% if (demo) { %>
+						<a href="<% demo %>"><div class="tile inline-block">Demo</div></a>
+						<% } %>
+					</div>
+				</div>
+				<div class="col-md-9 col-lg-9 col-sm-9 col-xs-12">
+					<div class="tags-container">
+						<% _.each(tags, function(tag) { %>
+							<div class="tag"><%- tag %></div>
+						<% }); %>
+					</div>
+				</div>
+			</div>
+		</div>
 	</script>
 
 	<!-- Vendors -->
@@ -125,9 +121,9 @@
 	<!-- Views -->
 	<script src="js/views/header.js"></script>
 	<script src="js/views/header-compact.js"></script>
-	<script src="js/views/home.js"></script>
 	<script src="js/views/project-summary.js"></script>
 	<script src="js/views/project.js"></script>
+	<script src="js/views/home.js"></script>
 
 	<!-- App -->
 	<script src="js/utils.js"></script>

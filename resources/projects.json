@@ -2,9 +2,9 @@
 	{
 		"slug" : "picross",
 		"name" : "Picross",
-		"short_desc" : "Front end web application that lets you create your own Picross puzzle to print out or share with others.",
-		"desc" : "asd",
-		"thumbnail" : "",
+		"short_desc" : "A front end web application that lets you create your own Picross (aka nonogram) puzzle to print out or share with others.",
+		"desc" : "",
+		"thumbnail" : null,
 		"pictures" : [],
 		"tags" : ["JavaScript", "HTML", "CSS", "jQuery", "Backbone"],
 		"source": "https://github.com/Rickkwa/Picross",
@@ -14,11 +14,12 @@
 	{
 		"slug" : "wk-highlighter",
 		"name" : "WaniKani Highlighter",
-		"short_desc" : "",
+		"short_desc" : "WaniKani Highlighter is a Chrome Extension that marks the kanji and vocabulary you learned through WaniKani and brings them to your attention. This lets you more easily recognize what you are able to read and allows you to get an idea of your overall level.",
 		"desc" : "",
-		"thumbnail" : "",
+		"thumbnail" : "img/wkhighlighter-thumbnail.png",
 		"pictures" : [],
-		"tags" : [],
-		"source" : "https://github.com/Rickkwa/wanikani-highlighter"
+		"tags" : ["HTML", "CSS", "JavaScript", "Chrome API", "jQuery", "Ajax"],
+		"source" : "https://github.com/Rickkwa/wanikani-highlighter",
+		"demo" : "https://chrome.google.com/webstore/detail/wanikani-highlighter/hombnkakdkackepmkogeoldikgigfeoh"
 	}
 ]
