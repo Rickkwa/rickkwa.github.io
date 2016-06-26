@@ -44,6 +44,7 @@ app.utils = {
 	},
 
 	bindAnimateIn: function() {
+		$(window).off("scroll", this.animateIn); // Ensure this handler isn't bound twice
 		$(window).on("scroll", this.animateIn);
 		this.animateIn();
 	}
