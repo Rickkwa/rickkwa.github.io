@@ -37,9 +37,15 @@ app.utils = {
 	},
 
 	animateIn: function() {
-		$(".animate-in.invis").each(function() {
+		// $(".animate-in.invis").each(function() {
+		// 	if (app.utils.inViewport(this, { bottom: 120 }))
+		// 		$(this).removeClass("invis");
+		// });
+		$(".animate-in").each(function() {
 			if (app.utils.inViewport(this, { bottom: 120 }))
 				$(this).removeClass("invis");
+			else
+				$(this).addClass("invis");
 		});
 	},
 
