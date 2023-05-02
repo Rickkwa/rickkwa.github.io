@@ -1,130 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Ricky Kwan</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Ricky Kwan</title>
+    <link rel="stylesheet" href="css/bootstrap-5.2.3.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-	<header></header>
+    <header>
+        <section class="main-landing text-center">
+            <h1>Ricky Kwan</h1>
+            <div>DevOps Engineer located in Toronto, Canada.</div>
+        </section>
+    </header>
 
-	<main class="container"><div id="content"></div></main>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12">
+                <h2 class="text-center">Engineering</h2>
+                <p>
+                lorem ipsum
+                </p>
+                <div class="external-links">
+                    <a class="tile external-links-btn" href="https://www.linkedin.com/in/rickkwa/" target="_blank">
+                        <i class="fa fa-linkedin"></i><span class="label">LinkedIn</span>
+                    </a>
+                    <a class="tile external-links-btn" href="https://github.com/Rickkwa" target="_blank">
+                        <i class="fa fa-github"></i><span class="label">Github</span>
+                    </a>
+                </div>
+            </div>
 
-	<footer></footer>
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                <h2 class="text-center">Photography</h2>
+                <p>
+                lorem ipsum
+                </p>
+                <div class="external-links">
+                    <a class="tile external-links-btn" href="https://photos.rickykwan.ca" target="_blank">
+                        <i class="fa fa-camera-retro"></i><span class="label">Gallery</span>
+                    </a>
+                    <a class="tile external-links-btn" href="https://www.instagram.com/arkscry/" target="_blank">
+                        <i class="fa fa-instagram"></i><span class="label">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-	<!-- Templates -->
-	<script type="text/template" id="header-template">
-	</script>
-
-	<script type="text/template" id="header-compact-template">
-	</script>
-
-	<script type="text/template" id="project-template">
-	</script>
-
-	<script type="text/template" id="home-template">
-		<section class="main-landing text-center">
-			<h1>Ricky Kwan</h1>
-			<div>Software Developer located in Toronto, Canada.</div>
-		</section>
-
-		<section class="intro-and-contact">
-			<div class="row">
-				<div class="col-md-8 col-lg-8 col-sm-8 col-xs-12">
-					<h2 class="text-center">About Me</h2>
-					<p>
-					I am <%= age %> years old and graduated from the University of Toronto in June of 2016. I majored in Computer Science; specializing in software engineering. I am a passionate developer, and am eager to learn new things regarding technology. My school has a co-op program, which allowed me to get some professional experience developing web applications that meets client expectations.
-					My hobbies include gaming, watching anime, and sometimes answering questions on StackOverflow. Of course, I also work on personal programming projects as well! You can see some of those projects listed below.
-					</p>
-				</div>
-
-				<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 text-center">
-					<h2 class="">Networking</h2>
-					<div>
-						<% contactInfos.each(function(ciModel) { %>
-							<a class="tile network-btn row" href="<%= ciModel.get('link') %>">
-								<div class="col-md-offset-4 col-md-1 col-sm-offset-3 col-sm-1 col-xs-offset-4 col-xs-1 text-right">
-									<i class="fa fa-<%= ciModel.get('fa_icon') %>"></i>
-								</div>
-								<div class="col-md-3 col-sm-3 col-xs-3 text-left"> <%= ciModel.get('text') %></div>
-							</a>
-						<% }); %>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section>
-		</section>
-
-		<section class="personal-projects">
-			<h2 class="text-center">Personal Projects</h2>
-			<div class="project-summary-container"></div>
-		</section>
-	</script>
-
-	<script type="text/template" id="project-summary-template">
-		<div class="project-summary animate-in invis">
-			<div class="row">
-				<div class="project-thumbnail col-md-3 col-lg-3 hidden-xs hidden-sm">
-					<img src="<%= thumbnail ? thumbnail : 'img/placeholder-thumbnail.png' %>" class="img-responsive"/>
-				</div>
-				<div class="col-md-9 col-lg-9 col-xs-12">
-					<div class="project-content">
-						<h3><%- name %></h3>
-						<p><%- short_desc %></p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
-					<div class="links-container">
-						<% if (source) { %>
-						<a href="<%= source %>"><div class="tile inline-block">Source</div></a>
-						<% } else { %>
-						<div class="tile inline-block">Source Unavailable</div>
-						<% } %>
-						<% if (demo) { %>
-						<a href="<%= demo %>"><div class="tile inline-block">Demo</div></a>
-						<% } %>
-					</div>
-				</div>
-				<div class="col-md-9 col-lg-9 col-sm-9 col-xs-12">
-					<div class="tags-container">
-						<% _.each(tags, function(tag) { %>
-							<div class="tag"><%- tag %></div>
-						<% }); %>
-					</div>
-				</div>
-			</div>
-		</div>
-	</script>
-
-	<!-- Vendors -->
-	<script src="js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="js/vendor/underscore.js"></script>
-	<script src="js/vendor/backbone.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-
-	<!-- Models -->
-	<script src="js/models/project.js"></script>
-	<script src="js/models/contact-info.js"></script>
-
-	<!-- Collections -->
-	<script src="js/collections/projects.js"></script>
-	<script src="js/collections/contact-infos.js"></script>
-
-	<!-- Views -->
-	<!-- <script src="js/views/header.js"></script> -->
-	<!-- <script src="js/views/header-compact.js"></script> -->
-	<script src="js/views/project-summary.js"></script>
-	<!-- <script src="js/views/project.js"></script> -->
-	<script src="js/views/home.js"></script>
-
-	<!-- App -->
-	<script src="js/utils.js"></script>
-	<script src="js/app.js"></script>
 </body>
 </html>
