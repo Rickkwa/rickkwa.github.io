@@ -1,7 +1,15 @@
+/* @font-face {
+	font-family: neue montreal;
+	src: url("/fonts/NeueMontreal-Regular.ttf");
+} */
+
 body {
-	font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
-	color: #333;
+	/* font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial; */
+	/* font-family: "neue montreal", "Segoe UI", "Arial"; */
+	font-family: "Segoe UI", "Arial";
 	color: #3f3f3f;
+	background-color: #f7f7f7;
+	letter-spacing: .06em;
 }
 
 main {
@@ -14,22 +22,24 @@ main {
 
 .tile {
 	border-radius: 2px;
-	/*background-color: #e5e5e5;*/
-	background-color: #ededed;
+	background-color: #e0e0e0;
 	padding: 10px;
 	box-sizing: border-box;
 }
 
-/* Main Header */
 .main-landing {
 	margin: 100px 0;
 	font-size: 1.5em;
+	font-weight: 300;
 }
 
 .main-landing h1 {
 	font-size: 3em;
 }
 
+h2 {
+	font-weight: 300;
+}
 
 .external-links {
 	display: flex;
