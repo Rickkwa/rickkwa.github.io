@@ -1,64 +1,59 @@
-/* @font-face {
-	font-family: neue montreal;
-	src: url("/fonts/NeueMontreal-Regular.ttf");
-} */
-
 body {
-	/* font-family: "neue montreal", "Segoe UI", "Arial"; */
-	font-family: "Segoe UI", "Arial";
-	color: #3f3f3f;
-	background-color: #f7f7f7;
-	letter-spacing: .06em;
+    font-family: "Segoe UI", "Arial";
+    color: #3f3f3f;
+    background-color: #f7f7f7;
+    letter-spacing: .06em;
 }
 
 main {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 .img {
-	border-radius: 2px;
+    border-radius: 2px;
 }
 
 .tile {
-	border-radius: 3px;
-	background-color: #e0e0e0;
-	padding: 10px;
-	box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .main-landing {
-	margin: 100px 0 75px 0;
-	font-size: 1.5em;
-	font-weight: 300;
+    padding: 100px 0 75px 0;
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 .main-landing h1 {
-	font-size: 3em;
+    font-size: 3em;
 }
 
 main h2 {
-	font-weight: 300;
-	margin-top: 25px;
+    font-weight: 300;
+    margin: 25px 0;
 }
 
 .external-links {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .external-links-btn {
-	color: inherit;
-	margin: 5px;
-	padding: 10px 20px;
-	text-decoration: none;
+    color: inherit;
+    margin: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .external-links-btn:hover {
-	color: rgb(0, 43, 44);
-	color: black;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 43, 44);
+    color: black;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .external-links-btn .label {
-	padding-left: 10px;
+    padding-left: 10px;
 }
