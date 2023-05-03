@@ -1,8 +1,13 @@
+:root {
+    --header-height: 315px;
+}
+
 body {
     font-family: "Segoe UI", "Arial";
     color: #3f3f3f;
     background-color: #f7f7f7;
     letter-spacing: .06em;
+    /* background-color: gray; Temp, delete me */
 }
 
 main {
@@ -20,10 +25,35 @@ main {
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    height: var(--header-height);
+    padding: 30px 10px 10px 10px;
+    align-items: center;
+}
+
 .main-landing {
-    padding: 100px 0 75px 0;
     font-size: 1.5em;
     font-weight: 300;
+
+    /* Uncomment this and .banner-background css to enable background banner image */
+    /* display: inline-block;
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 0.4);
+    border-radius: 3px; */
+}
+
+/* Uncomment this and snippet in .main-landing css to enable background banner image */
+.banner-background {
+    /* position: absolute;
+    top: 0;
+    background: url("../img/banner-bg.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: var(--header-height);
+    width: 100%;
+    z-index: -1; */
 }
 
 .main-landing h1 {
@@ -56,4 +86,8 @@ main h2 {
 
 .external-links-btn .label {
     padding-left: 10px;
+}
+
+footer {
+    padding: 20px;
 }
