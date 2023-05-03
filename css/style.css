@@ -2,6 +2,22 @@
     --header-height: 315px;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
+
 body {
     font-family: "Segoe UI", "Arial";
     color: #3f3f3f;
@@ -79,7 +95,6 @@ main h2 {
 }
 
 .external-links-btn:hover {
-    color: rgb(0, 43, 44);
     color: black;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
