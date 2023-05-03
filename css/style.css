@@ -84,6 +84,7 @@ main h2 {
 .external-links {
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 .external-links-btn {
