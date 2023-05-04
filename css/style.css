@@ -26,6 +26,17 @@ body {
     /* background-color: gray; Temp, delete me */
 }
 
+ul {
+    list-style-type: none;
+    padding-left: 0.5rem;
+}
+
+li::before {
+  content: "\2022";
+  margin-right: 0.4em;
+  position: relative;
+}
+
 main {
     font-size: 18px;
 }
@@ -84,7 +95,7 @@ main h2 {
 .external-links {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 
 .external-links-btn {
