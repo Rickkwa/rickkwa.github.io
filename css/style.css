@@ -1,115 +1,120 @@
+:root {
+    --header-height: 315px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
+
 body {
-	font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
+    font-family: "Segoe UI", "Arial";
+    color: #3f3f3f;
+    background-color: #f7f7f7;
+    letter-spacing: .06em;
+    /* background-color: gray; Temp, delete me */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0.5rem;
+}
+
+li::before {
+  content: "\2022";
+  margin-right: 0.4em;
+  position: relative;
 }
 
 main {
-	font-size: 18px;
-}
-
-footer {
-	margin-top: 20px;
+    font-size: 18px;
 }
 
 .img {
-	border-radius: 2px;
-}
-
-.inline-block {
-	display: inline-block;
+    border-radius: 2px;
 }
 
 .tile {
-	border-radius: 2px;
-	/*background-color: #e5e5e5;*/
-	background-color: #ededed;
-	padding: 10px;
-	box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.thumbnail {
-	border-radius: 2px;
+header {
+    display: flex;
+    justify-content: center;
+    height: var(--header-height);
+    padding: 30px 10px 10px 10px;
+    align-items: center;
 }
 
-/* Main Header */
 .main-landing {
-	margin: 100px 0;
-	font-size: 1.5em;
+    font-size: 1.5em;
+    font-weight: 300;
+
+    /* Uncomment this and .banner-background css to enable background banner image */
+    /* display: inline-block;
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 0.4);
+    border-radius: 3px; */
+}
+
+/* Uncomment this and snippet in .main-landing css to enable background banner image */
+.banner-background {
+    /* position: absolute;
+    top: 0;
+    background: url("../img/banner-bg.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: var(--header-height);
+    width: 100%;
+    z-index: -1; */
 }
 
 .main-landing h1 {
-	font-size: 3em;
+    font-size: 3em;
 }
 
-/* Who am I? And Networking */
-.network-btn {
-	display: block;
-	color: inherit;
-	margin: 0 0 10px 0;
+main h2 {
+    font-weight: 300;
+    margin: 25px 0;
 }
 
-.network-btn:hover {
-	text-decoration: none;
+.external-links {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
 }
 
-/* Skills */
-
-/* Projects List */
-.personal-projects {
-	margin-top: 150px;
+.external-links-btn {
+    color: inherit;
+    margin: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-.project-summary {
-	background-color: #ededed;
-	border-radius: 2px;
-	margin-bottom: 30px;
+.external-links-btn:hover {
+    color: black;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.project-thumbnail img, .project-content {
-	height: 200px;
+.external-links-btn .label {
+    padding-left: 10px;
 }
 
-.project-thumbnail img {
-	width: 200px;
-}
-
-.project-content {
-	overflow-y: auto;
-	padding: 0px 10px;
-	border-bottom: 1px solid #cecece;
-	box-sizing: border-box;
-}
-
-.tag {
-	display: inline-block;
-	font-size: 0.8em;
-	background-color: #d6d6d6;
-	border-radius: 3px;
-	margin: 2px;
-	padding: 2px 5px;
-	box-sizing: border-box;
-	line-height: 1.2em;
-}
-
-.tags-container {
-	margin: 5px;
-}
-
-/* Animations */
-.animate-in {
-	-webkit-transition: all 150ms linear;
-	-moz-transition: all 150ms linear;
-	-ms-transition: all 150ms linear;
-	-o-transition: all 150ms linear;
-	transition: all 150ms linear;
-}
-
-.animate-in.invis {
-	opacity: 0.1;
-	-moz-opacity: 0.1;
-
-	-moz-transform: scale(0.8);
-	-webkit-transform: scale(0.8);
-	-o-transform: scale(0.8);
-	-ms-transform: scale(0.8);
-	transform: scale(0.8);
+footer {
+    padding: 20px;
 }
